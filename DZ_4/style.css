@@ -1,0 +1,130 @@
+
+.author{
+    padding-top: 20px;
+}
+blockquote{
+    font-size: 25px;
+    font-weight: 650; 
+    text-align: center;
+    color: white;
+}
+cite{
+    font-size: 25px;
+    color: white;
+}
+.card_conteiner{
+    position: relative;
+}
+
+.card_conteiner img{
+    width: 150px;
+    margin-top: 120px;
+    position: absolute;
+}
+
+.img1{
+    left: 150px;
+    z-index: 0;
+    transform: rotate(-25deg) ;
+    top: 0px;
+}
+.img2{
+    left: 200px;
+    top: 5px;
+    z-index: 1;
+    transform: rotate(-10deg);
+}
+.img3{
+    left: 250px;
+    top: 20px;
+    z-index: 2;
+    transform: rotate(5deg) ;
+}
+
+.img1:hover{
+    top: -10px;
+    transition: top 0.5s ease;
+}
+.img2:hover{
+    top: -10px;
+    transition: top 0.5s ease;
+}
+.img3:hover{
+    top: -10px;
+    transition: top 0.5s ease;
+}
+
+.color_conteiner{
+    position: relative;
+    margin-top: 50px;
+}
+.red{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    z-index: 1;
+    opacity: 0.9;
+}
+.blue{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: absolute;
+    z-index: 2;
+    top: 70px;
+    left: 70px;
+    opacity: 0.9;
+}
+.green{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    position: absolute;
+    z-index: 1;
+    top: 140px;
+    left: 140px;
+    opacity: 0.9;
+}
+
+.move_conteiner{
+    margin-top: 50px;
+}
+
+.move_block{
+    height: 100px;
+    width: 100px;
+    animation-duration: 10s;
+    animation-name: anim;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes anim{
+    0%{
+        background-color: red;
+        transform: translateY(0);
+    }
+
+    25%{
+        background-color: blue;
+        transform: translateY(400px);
+    }
+
+    50%
+    {
+        background-color: green;
+        transform: translateY(400px) translateX(400px);
+    }
+
+    75%{
+        background-color: yellow;
+        transform: translateX(400px);
+    }
+
+    100%{
+        background-color: red;
+        transform: translateY(0);
+    }
+
+}
